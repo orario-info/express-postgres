@@ -7,10 +7,10 @@ image:
 # 初期データ initdata.sql を読み込む
 # JS 準備
 tasks:
-  - init: psql -f ./DB/database.sql
-       && psql -d techdb -f ./DB/schema.sql
-       && psql -d techdb -f ./DB/table.sql
-       && psql -d techdb -f ./DB/initdata.sql
+  - init: psql -f ./env/db/database.sql
+       && psql -d techdb -f ./env/db/schema.sql
+       && psql -d techdb -f ./env/db/table.sql
+       && psql -d techdb -f ./env/db/initdata.sql
        && npm install
 
 # Postgresql extension
