@@ -1,0 +1,9 @@
+{
+  "label": "gitpod-postgresql",
+  "host": "127.0.0.1",
+  "user": "gitpod",
+  "port": 5432,
+  "ssl": false,
+  "database": "techdb",
+  "password": "gitpod"
+}
