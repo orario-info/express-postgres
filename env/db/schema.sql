@@ -1,0 +1,3 @@
+-- スキーマの作成
+DROP SCHEMA IF EXISTS techsc;
+CREATE SCHEMA techsc AUTHORIZATION gitpod;
