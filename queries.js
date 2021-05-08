@@ -1,9 +1,11 @@
 const pg = require('pg')
+require('dotenv').config();
+
 const pool = new pg.Pool({
-  user: 'gitpod',
-  host: 'localhost',
-  database: 'techdb',
-  password: 'gitpod',
+  user: process.env.ENV_USER,
+  host: process.env.ENV_HOST,
+  database: process.env.ENV_DB,
+  password: process.env.ENV_PASSWORD,
   port: 5432,
 })
 
