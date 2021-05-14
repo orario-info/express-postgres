@@ -11,7 +11,7 @@ tasks:
        && psql -d techdb -f ./env/db/schema.sql
        && psql -d techdb -f ./env/db/table.sql
        && psql -d techdb -f ./env/db/initdata.sql
-#       && npm install
+       && npm install
 
 # Postgresql extension
 vscode:
