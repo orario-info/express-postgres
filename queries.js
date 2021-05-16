@@ -23,9 +23,12 @@ const getMemoById = (request, response) => {
 
   pool.query('SELECT * FROM techsc.memo WHERE idmemo = $1', [idmemo], (error, results) => {
     if (error) {
-      throw error
+      response.status(500).json('DB Error')
+    } else if(results.rowCount == 0) {
+      response.status(500).json('No Data')
+    } else {
+      response.status(200).json(results.rows)
     }
-    response.status(200).json(results.rows)
   })
 }
 
