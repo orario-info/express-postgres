@@ -19,9 +19,8 @@ const getMemos = (request, response) => {
 }
 
 const getMemoById = (request, response) => {
-  const idmemo = parseInt(request.params.id)
 
-  pool.query('SELECT * FROM techsc.memo WHERE idmemo = $1', [idmemo], (error, results) => {
+  pool.query('SELECT * FROM techsc.memo WHERE idmemo = $1', [request.params.id], (error, results) => {
     if (error) {
       response.status(500).json('DB Error')
     } else if(results.rowCount == 0) {
