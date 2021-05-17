@@ -17,3 +17,6 @@ tasks:
 vscode:
   extensions:
     - ckolkman.vscode-postgres@1.1.17:804d27cd5e9ff60a8c46a387413e9cbf
+    - github.vscode-pull-request-github@0.26.0:93ed47938ac0dc940991c06c1b31bcaa
+    - eamodio.gitlens@11.4.1:5426ef7c59a1fd3c808d1e1514afb539
+    - donjayamanne.githistory@0.6.16:6bd320b35762b18affb4459e5ae66c68
