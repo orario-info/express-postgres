@@ -13,7 +13,10 @@ tasks:
        && psql -d techdb -f ./env/db/initdata.sql
        && npm install
 
-# Postgresql extension
+# Postgresql
+# GitHub Pullrequest & Issues
+# GitLens
+# GitHistory
 vscode:
   extensions:
     - ckolkman.vscode-postgres@1.1.17:804d27cd5e9ff60a8c46a387413e9cbf
